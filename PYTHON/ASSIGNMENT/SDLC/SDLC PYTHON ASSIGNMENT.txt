@@ -1,0 +1,22 @@
+SDLC PYTHON ASSIGNMENT:
+
+
+
+Q-1.WHAT IS SOFTWARE?
+A-1.(1)Software is a set of instructions, data or programs used to operate computers and execute specific tasks. 
+    (2)It is the opposite of hardware, which describes the physical aspects of a computer. 
+    (3)Software is a generic term used to refer to applications, scripts and programs that run on a device.
+
+Q-2.WHAT IS SDLC?
+A-2.(1)The software development lifecycle (SDLC) is the cost-effective and time-efficient process that development teams use to design and build high-quality software.
+    (2)The goal of SDLC is to minimize project risks through forward planning so that software meets customer expectations during production and beyond.
+
+Q-3.WHAT IS PROGRAM & PROGRAMMING?
+A-3.(1)PROGRAM:
+     A program is an executable code, which serves some computational purpose.
+    (2)PROGRAMMING:
+     Software programming is the act of writing computer code that enables computer software to function.
+
+Q-4.WHAT IS THE IMPORTANCE OF PYTHON PROGRAMMING.
+A-4.(1)Python is commonly used for developing websites and software, task automation, data analysis, and data visualization.
+    (2)Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances.
