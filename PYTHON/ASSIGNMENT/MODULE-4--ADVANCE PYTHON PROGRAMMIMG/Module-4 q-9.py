@@ -1,8 +1,11 @@
 #Q-9 Write a Python program to count the number of lines in a text file 
 #A-9
-def file_lengthy(fname):
-        with open(fname) as f:
-                for i, l in enumerate(f):
-                        pass
-        return i + 1
-print("Number of lines in the file: ",file_lengthy("test.txt"))
+# txt file
+filename = "myfile.txt"
+num_lines = 0
+with open(filename, "r") as file:
+    for line in file:
+        num_lines += 1
+# print no. of lines
+print("no. of lines:", num_lines)
+

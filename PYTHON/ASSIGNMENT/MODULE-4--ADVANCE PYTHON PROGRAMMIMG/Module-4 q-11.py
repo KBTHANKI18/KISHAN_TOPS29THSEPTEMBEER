@@ -1,9 +1,11 @@
 #Q-11 Write a Python program to write a list to a file. 
 #A-11
-color = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
-with open('abc.txt', "w") as myfile:
-        for c in color:
-                myfile.write("%s\n" % c)
-
-content = open('abc.txt')
-print(content.read())
+# creating the list
+my_list = ["apple", "banana", "orange", "mango"]
+filename = "my_list.txt"
+with open(filename, "w") as file:
+    for item in my_list:
+        file.write(item + "\n")
+# print list to the file
+print("done successfully!!")
+ 

@@ -1,14 +1,10 @@
-#Q-19 Write python program that user to enter only odd numbers, else willraise an exception.
-#A-19 
-try:
-    
-    even_numbers = [2,4,6,8]
-    print(even_numbers[5])
-
-except ZeroDivisionError:
-    print("Denominator cannot be 0.")
-    
-except IndexError:
-    print("Index Out of Bound.")
-
-# Output: Index Out of Bound
+#Q-20 Write python program that user to enter only odd numbers, else willraise an exception.
+#A-20 
+while True:
+    try:
+        num = int(input("enter an odd number: "))
+        if num % 2 == 0:
+            raise ValueError("Even numbers are not allowed.")
+        break
+    except ValueError as e:
+        print(e)
