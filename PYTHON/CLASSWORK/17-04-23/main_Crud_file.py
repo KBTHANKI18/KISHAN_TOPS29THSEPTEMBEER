@@ -49,6 +49,58 @@ while status:
 
         print(data)
 
+    elif choice == 3:
+        #update data
+        id = int(input("Enter Id : "))
+        name = input("Enter Name : ") 
+        subject = input("Enter Subject : ")
+
+        #query
+        query = "update student set name = '%s',subject = '%s' where id = %s"
+        args = (name,subject,id)
+
+        mycursor.execute(query%args)
+        mydb.commit()
+        print("Updated Successfully!!")
+
+    elif choice == 4:
+        #search data
+        id = int(input("Enter Id : "))       
+
+        #query
+        query = "select * from student where id = %s"
+
+        #args
+        args = (id)
+
+        mycursor.execute(query%args)
+        #retrieve all data in row variable
+        row = mycursor.fetchone()
+
+        #id = 0 name = 1 subject = 2
+
+        displayname = row[1]
+        displaysubject = row[2]
+
+        print("name = ",displayname)
+        print("subject = ",displaysubject)
+
+    elif choice == 5:
+        #delete data
+        id = int(input("Enter Id : "))
+
+        #query
+        query = "delete from student where id  = %s"
+
+        #args
+        args = (id) 
+
+        mycursor.execute(query%args)
+
+        mydb.commit()
+        print("Deleted Successfully!!")
+
+
 
     loop_choice = input("Do you want to perform more actions press 'y' for yes and 'n' for no :") 
     if loop_choice == 'n' or loop_choice == 'no':
